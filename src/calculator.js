@@ -6,13 +6,18 @@ import { useState } from 'react';
 function Calculator() {
     let [val, setVal] = useState(" ");
     const handleButtonClick = (b) => {
+      try{
         if(b ==='='){
             const result = eval(val); // Evaluate the expression using JavaScript's eval function (not recommended for production)
             setVal(result.toString());
         }else{
         setVal((p)=>p+=b);}
       
-      };
+      }
+      catch(e){
+        setVal("WRONG VALUE");
+      }
+    }
       function clear(){
         setVal(" ");
       }
