@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h2 {
+  color: #c9302c; /* Red color */
+  font-family: 'Arial', sans-serif; /* Custom font family */
+  text-align: center; /* Center align text */
+  margin-bottom: 20px; /* Add some margin at the bottom */
+  animation: fadeIn 2s infinite; /* Fade-in animation */
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
