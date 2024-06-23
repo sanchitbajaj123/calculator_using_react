@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import logo from './logo.svg';
 import Calculator from './calculator';
-
+import reportWebVitals from './reportWebVitals';
 const Home = () => (
   <div className="App">
     <header className="App-header">
@@ -13,6 +13,9 @@ const Home = () => (
         CALCY
       </Link>
     </header>
+    <div>
+      {reportWebVitals(console.log)}
+    </div>
   </div>
 );
 
@@ -26,5 +29,5 @@ function App() {
     </Router>
   );
 }
-
+reportWebVitals();
 export default App;
